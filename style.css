@@ -104,6 +104,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Estilos de entrada de texto */
+
+
 /* Estilos de botón */
 button {
     padding: 15px 30px;
@@ -159,4 +162,29 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Botón de eliminar nombre */
+.button-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botón de reset */
+.button-reset {
+    margin: 15px 0 0 80px;
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.button-reset:hover {
+    background-color: darkgray;
 }
