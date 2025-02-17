@@ -104,9 +104,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos de entrada de texto */
-
-
 /* Estilos de botón */
 button {
     padding: 15px 30px;
@@ -178,7 +175,7 @@ ul {
 
 /* Botón de reset */
 .button-reset {
-    margin: 15px 0 0 80px;
+    margin: 15px auto;
     background-color: gray;
     color: white;
     padding: 10px 20px;
@@ -187,4 +184,85 @@ ul {
 }
 .button-reset:hover {
     background-color: darkgray;
+}
+.name-list li {
+    margin-top: 10px; /* Espacio entre los nombres */
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Ajustes generales para móviles */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .main-content {
+        height: auto;
+        width: 100%;
+    }
+
+    .header-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .header-banner img {
+        max-width: 80%;
+    }
+
+    .input-section {
+        border-radius: 32px 32px 0 0;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-name {
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .button-add {
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .name-list li {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .button-draw, .button-reset {
+        width: 100%;
+    }
 }
